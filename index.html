@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meu Site com Carrossel</title>
+    <!-- Inclua a biblioteca do Bootstrap CSS (substitua o URL pelo caminho correto) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        .carousel-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+        }
+
+        .carousel {
+            max-width: 100%; /* Tamanho ajustado para 100% da largura da tela */
+        }
+
+        /* Estilo personalizado para as imagens do carrossel */
+        .carousel-inner img {
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="carousel-container">
+            <div id="meuCarrossel" class="carousel slide" data-bs-ride="carousel">
+                <!-- Slides do Carrossel -->
+                <div class="carousel-inner">
+                   <div class="carousel-item active">
+                        <img src="https://thumbs2.imgbox.com/0d/71/Ia60Tci7_t.jpeg" class="d-block w-80" alt="Imagem 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://thumbs2.imgbox.com/fb/ba/N6efrTeI_t.jpeg" class="d-block w-80" alt="Imagem 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://thumbs2.imgbox.com/3e/57/IdpvgaVY_t.jpeg" class="d-block w-80" alt="Imagem 3">
+                    </div>
+                </div>
+
+                <!-- Controles do Carrossel -->
+                <a class="carousel-control-prev" href="#meuCarrossel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#meuCarrossel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" ariahidden="true"></span>
+                    <span class="visually-hidden">Próxima</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inclua o script do Bootstrap JS (substitua o URL pelo caminho correto) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
